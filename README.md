@@ -9,7 +9,7 @@
 - Html
 - Css
 - Linter
-- Figma
+- Figma (Template 5)
 
 ## Authors
 
