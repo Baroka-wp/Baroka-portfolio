@@ -3,17 +3,15 @@
 body {
   font-family: 'Poppins', sans-serif;
   padding: 0;
-  margin: 0
+  margin: 0;
 }
-
 
 /* -------------------------- HEADER ----------------------------- */
 header {
   display: flex;
   flex-direction: column;
 }
-
-nav{
+nav {
   display: flex;
   justify-content: space-between;
 }
@@ -31,8 +29,8 @@ nav{
   left: 0px;
   top: 0px;
 }
-/* -------------------------- HEADERLINE ----------------------------- */
 
+/* -------------------------- HEADERLINE ----------------------------- */
 .headline {
   display: flex;
   flex-direction: column;
@@ -40,24 +38,22 @@ nav{
   margin: 100px 50px 50px 50px;
 }
 .headline h1 {
-  font-family: 'Playfair Display';
+  font-family: 'Playfair Display',sans-serif;
   font-style: normal;
-  color: #1A2236;
+  color: #1a2236;
   width: 200px;
   font-weight: 400;
   font-size: 80px;
   line-height:100%;
 }
-
 .header-button {
-  font-family: 'Poppins';
+  font-family: 'Poppins',sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  color: #FFFFFF;
-  background: #1A2236;
+  color: #fff;
+  background: #1a2236;
   margin-top: 20px;
   padding: 5px 42px;
-
 }
