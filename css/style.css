@@ -305,13 +305,13 @@ nav {
 }
 
 .technologies-section li {
-  font-family: 'Poppins', sans-serif;;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 25px;
   line-height: 27px;
   letter-spacing: -0.0525em;
-  color: #FFFFFF;
+  color: #fff;
   list-style: initial;
   margin: 25px;
 }
