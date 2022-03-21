@@ -168,8 +168,11 @@ nav {
 }
 
 .technology-tag {
-  display: flex;
-  justify-content: start;
+  display: block;
+}
+
+.technology-tag li {
+  float: left;
 }
 
 .technology-tag li {
