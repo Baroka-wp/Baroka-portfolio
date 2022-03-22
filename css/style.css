@@ -127,6 +127,16 @@ nav {
   background-size: cover;
 }
 
+.contact-form h2 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1a2236;
+  margin: 106px 0 20px 0;
+}
+
 #projects h2 {
   font-family: 'Playfair Display', sans-serif;
   color: #1a2236;
@@ -326,4 +336,110 @@ nav {
   bottom: 0;
   width: 157px;
   height: 157px;
+}
+
+/* -------------------------- PROJECT SECTION ----------------------------- */
+.contact-form {
+  position: relative;
+  background: #f9f9fa;
+  display: flex;
+  flex-direction: column;
+  padding: 0 14px;
+  margin: 50px 0 74px 0;
+}
+
+.contact-form img {
+  position: absolute;
+  width: 111px;
+  height: 74.02px;
+  left: 0px;
+  top: 0;
+}
+
+.contact-form p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #1a2236;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
+
+.contact-form form input {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  height: 52px;
+  margin-bottom: 8px;
+  background: #fff;
+  border: 1px solid #dfdfe0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+
+.contact-form form input:focus {
+  outline: none;
+  border: 1px solid #1a2236;
+}
+
+.contact-form form textarea {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  height: 112px;
+  margin-bottom: 8px;
+  background: #fff;
+  border: 1px solid #dfdfe0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 8px 16px;
+  resize: none;
+}
+
+.contact-form form textarea:focus {
+  outline: none;
+  border: 1px solid #1a2236;
+}
+
+.contact-form button {
+  align-self: stretch;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  background: #1a2236;
+  height: 70px;
+  padding: 5px 42px;
+  margin-top: 22px;
+}
+
+.contact-form button:hover {
+  background: #fff;
+  color: #1a2236;
+  border: 1px solid #1a2236;
+  box-sizing: border-box;
+}
+
+.contact-form button:active {
+  background: #fff;
+  color: #1a2236;
+  border: 2px solid #1a2236;
+  box-sizing: border-box;
 }
