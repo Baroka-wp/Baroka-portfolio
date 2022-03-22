@@ -128,7 +128,7 @@ nav {
 }
 
 .contact-form h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
@@ -183,6 +183,9 @@ nav {
 
 .technology-tag li {
   float: left;
+}
+
+.technology-tag li {
   justify-content: center;
   background: #98dede;
   margin-right: 10px;
@@ -349,7 +352,7 @@ nav {
   position: absolute;
   width: 111px;
   height: 74.02px;
-  left: 0;
+  left: 0px;
   top: 0;
 }
 
