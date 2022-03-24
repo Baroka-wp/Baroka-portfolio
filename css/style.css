@@ -43,8 +43,8 @@ header {
   justify-content: space-between;
 }
 
-.nav-bar-desk-version{
-  display:none;
+.nav-bar-desk-version {
+  display: none;
 }
 
 .toolbar {
@@ -76,7 +76,7 @@ header {
   display: none;
 }
 
-.hero-section h1 {
+.hero-section h2 {
   font-family: 'Playfair Display', sans-serif;
   font-style: normal;
   color: #1a2236;
@@ -430,7 +430,7 @@ header {
   border-radius: 4px;
   padding: 8px 16px;
   resize: none;
-  width:100%;
+  width: 100%;
 }
 
 .contact-form form textarea:focus {
@@ -473,24 +473,24 @@ header {
 
 /* -------------------------- Desktop version ----------------------------- */
 
-@media screen and (min-width:768px) {
-  .nav-bar-mobile-version{
-    display:none;
+@media screen and (min-width: 768px) {
+  .nav-bar-mobile-version {
+    display: none;
   }
 
-  .nav-bar-desk-version{
-    display:block;
-    box-shadow: 0px 0.5px 0px #dddfe6;
+  .nav-bar-desk-version {
+    display: block;
+    box-shadow: 0 0.5px 0 #dddfe6;
   }
 
-  .nav-bar-desk-version ul{
-    display:flex;
+  .nav-bar-desk-version ul {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 38px 0;
   }
 
-  .nav-bar-desk-version li a{
+  .nav-bar-desk-version li a {
     position: relative;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -503,7 +503,7 @@ header {
     text-decoration: none;
   }
 
-  .nav-bar-desk-version li a:after{
+  .nav-bar-desk-version li a::after {
     content: "";
     position: absolute;
     background-color: #1a2236;
@@ -511,14 +511,14 @@ header {
     width: 0;
     left: 0;
     bottom: -10px;
-    transition: .3s;
+    transition: 0.3s;
   }
 
-  .nav-bar-desk-version li a:hover:after{
+  .nav-bar-desk-version li a:hover::after {
     width: 100%;
   }
 
-  .nav-bar-desk-version li a:active:after{
+  .nav-bar-desk-version li a:active::after {
     width: 100%;
   }
 
@@ -552,7 +552,11 @@ header {
     align-self: flex-end;
   }
 
-/* -------------------------- desktop project ----------------------------- */
+  /* -------------------------- desktop project ----------------------------- */
+
+  .contact-form h2 {
+    font-size: 110px;
+  }
 
   #projects-mobile {
     display: none;
@@ -564,12 +568,12 @@ header {
   }
 
   #projects-desk h2 {
-    font-family: 'Playfair Display';
+    font-family: 'Playfair Display', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 110px;
     line-height: 100%;
-    color: #1A2236;
+    color: #1a2236;
     transform-origin: 252px 137px;
     transform: rotate(-90deg);
   }
@@ -588,7 +592,7 @@ header {
     align-self: flex-start;
   }
 
-  #projects-desk .project-1 .project-container{
+  #projects-desk .project-1 .project-container {
     display: flex;
     flex-direction: column-reverse;
     height: 558px;
@@ -618,6 +622,11 @@ header {
     font-size: 60px;
     line-height: 80%;
     margin-top: 50px;
+  }
+
+  .technologies-section li {
+    font-size: 18px;
+    margin: 10px 0 10px 25px;
   }
 
   #projects-desk .technology-tag {
@@ -666,8 +675,7 @@ header {
     box-sizing: border-box;
   }
 
-/* -------------------------- Desk random project ----------------------------- */
-
+  /* -------------------------- Desk random project ----------------------------- */
 
   #about {
     display: flex;
@@ -676,15 +684,17 @@ header {
     gap: 96px;
     margin: 216px 160px 160px 160px;
   }
+
   .about-section {
     width: 50%;
   }
 
   .technologies {
     display: grid;
-    grid-template: 50% 50%/50% 50% ;
+    grid-template: 50% 50%/50% 50%;
     width: 50%;
   }
+
   .technologies-section {
     padding: 25px;
     margin: 0;
@@ -693,11 +703,6 @@ header {
   .technologies-section h3 {
     font-size: 20px;
     padding: 21px 0;
-  }
-
-  .technologies-section li {
-    font-size: 18px;
-    margin: 10px 0 10px 25px;
   }
 
   .technologies-section img {
@@ -729,7 +734,7 @@ header {
   }
 
   .about-button {
-    width: 254px;;
+    width: 254px;
   }
 
   /* -------------------------- Desk contact ----------------------------- */
@@ -741,7 +746,7 @@ header {
     gap: 60px;
   }
 
-  .contact-form form{
+  .contact-form form {
     align-content: center;
     width: 550px;
     margin: auto auto;
@@ -753,15 +758,15 @@ header {
     gap: 35px;
   }
 
-  .form-input .field-name{
+  .form-input .field-name {
     width: 50%;
   }
 
-  .form-input .field-email{
+  .form-input .field-email {
     width: 50%;
   }
 
-  .contact-form header{
+  .contact-form header {
     align-content: center;
     width: 550px;
     margin: auto auto;
@@ -789,10 +794,6 @@ header {
     bottom: 0;
   }
 
-  .contact-form h2 {
-    font-size: 110px;
-  }
-
   .contact-form button {
     align-self: center;
   }
@@ -807,7 +808,7 @@ header {
     padding: 5px;
   }
 
-/* -------------------------- Desk project ----------------------------- */
+  /* -------------------------- Desk project ----------------------------- */
 
   .random-project {
     display: flex;
@@ -820,12 +821,17 @@ header {
     align-items: flex-end;
   }
 
+  .block-1 img:first-child,
+  .block-1 img:last-child {
+    width: 465px;
+  }
+
   .block-2 {
     display: flex;
     align-items: center;
   }
 
-  .block-2 img:first-child{
+  .block-2 img:first-child {
     width: 800px;
   }
 
@@ -834,15 +840,10 @@ header {
     align-items: flex-start;
   }
 
-  .block-3-deco{
+  .block-3-deco {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    width: 46%;
+    width: 50%;
   }
-
-
-
-
-
 }
