@@ -189,6 +189,12 @@ header {
   line-height: 80%;
 }
 
+.technologies {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .technology-tag {
   display: block;
 }
@@ -471,6 +477,39 @@ header {
   display: none;
 }
 
+/* -------------------------- footer ----------------------------- */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: #1a2236;
+  height: 150px;
+}
+
+footer .mobile-resume-button {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #92dcdc;
+}
+
+footer .social-icones {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer .social-icones i {
+  color: #fff;
+  font-size: 24px;
+}
+
+.desk-resume-button {
+  display: none;
+}
+
 /* -------------------------- Desktop version ----------------------------- */
 
 @media screen and (min-width: 768px) {
@@ -550,6 +589,25 @@ header {
 
   .image_dots {
     align-self: flex-end;
+  }
+
+  .hero-section h2 {
+    font-family: 'Playfair Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 110px;
+    line-height: 100%;
+    color: #1a2236;
+  }
+
+  .hero-section p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    color: #1a2236;
   }
 
   /* -------------------------- desktop project ----------------------------- */
@@ -693,6 +751,7 @@ header {
     display: grid;
     grid-template: 50% 50%/50% 50%;
     width: 50%;
+    gap: 0;
   }
 
   .technologies-section {
@@ -744,6 +803,7 @@ header {
     justify-content: space-between;
     padding-bottom: 156px;
     gap: 60px;
+    margin: 50px 0 0 0;
   }
 
   .contact-form form {
@@ -782,14 +842,14 @@ header {
 
   .image-geometry-6 {
     position: absolute;
-    width: 10%;
+    width: 25%;
     left: 0;
     top: 0;
   }
 
   .image-geometry_7 {
     position: absolute;
-    width: 10%;
+    width: 30%;
     right: 0;
     bottom: 0;
   }
@@ -845,5 +905,45 @@ header {
     align-items: flex-start;
     justify-content: space-between;
     width: 50%;
+  }
+
+  /* -------------------------- Desk footer ----------------------------- */
+
+  .mobile-resume-button {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #1a2236;
+    height: 123px;
+  }
+
+  footer .mobile-resume-button {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #92dcdc;
+  }
+
+  footer .social-icones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  footer .social-icones i {
+    color: #fff;
+    font-size: 24px;
+  }
+
+  .desk-resume-button {
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #92dcdc;
   }
 }
