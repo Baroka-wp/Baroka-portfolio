@@ -598,7 +598,7 @@ footer .social-icones i {
     font-size: 110px;
     line-height: 100%;
     color: #1a2236;
-    animation: slideRigth 3s;
+    animation: slideRigth 2s ease-in-out;
   }
 
   .hero-section p {
@@ -609,7 +609,7 @@ footer .social-icones i {
     line-height: 21px;
     letter-spacing: -0.01em;
     color: #1a2236;
-    animation: slideLeft 3s;
+    animation: slideLeft 2s ease-in-out;
   }
 
   /* -------------------------- desktop project ----------------------------- */
