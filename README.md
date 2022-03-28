@@ -4,6 +4,9 @@
 
 > The goal here is to buil my Portfolio
 
+## Deployement
+- github page: [Baroka's Portfolio]()
+
 ## Built With
 
 - Html
