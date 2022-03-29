@@ -1,38 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap');
+@import "variables";
+@import "normalize";
 
-body {
-  font-family: 'Poppins', sans-serif;
-  padding: 0;
-  margin: 0;
-}
-
-h1 {
-  margin: 0;
-  padding: 0;
-}
-
-h2 {
-  margin: 0;
-  padding: 0;
-}
-
-h3 {
-  margin: 0;
-  padding: 0;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* -------------------------- HEADER ----------------------------- */
 header {
   display: flex;
   flex-direction: column;
@@ -579,8 +547,8 @@ footer .social-icones i {
 
   .hero-section {
     z-index: 1;
-    padding: 50px 96px 0 160px;
-    width: 60%;
+    margin: 50px 96px 0 160px;
+    width: 50%;
   }
 
   .header-button {
@@ -883,7 +851,11 @@ footer .social-icones i {
 
   .block-1 img:first-child,
   .block-1 img:last-child {
-    width: 465px;
+    width: 20%;
+  }
+
+  .block-1 img:nth-child(2) {
+    width: 50%;
   }
 
   .block-2 {
@@ -892,7 +864,11 @@ footer .social-icones i {
   }
 
   .block-2 img:first-child {
-    width: 800px;
+    width: 50%;
+  }
+
+  .block-2 img:last-child {
+    width: 50%;
   }
 
   .block-3 {
