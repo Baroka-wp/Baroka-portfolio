@@ -566,6 +566,7 @@ footer .social-icones i {
     font-size: 110px;
     line-height: 100%;
     color: #1a2236;
+    animation: slideRigth 2s ease-in-out;
   }
 
   .hero-section p {
@@ -576,6 +577,7 @@ footer .social-icones i {
     line-height: 21px;
     letter-spacing: -0.01em;
     color: #1a2236;
+    animation: slideLeft 2s ease-in-out;
   }
 
   /* -------------------------- desktop project ----------------------------- */
@@ -713,6 +715,7 @@ footer .social-icones i {
 
   .about-section {
     width: 50%;
+    animation: slideLeft 3s;
   }
 
   .technologies {
@@ -720,6 +723,7 @@ footer .social-icones i {
     grid-template: 50% 50%/50% 50%;
     width: 50%;
     gap: 0;
+    animation: slideRigth 3s;
   }
 
   .technologies-section {
@@ -921,5 +925,29 @@ footer .social-icones i {
     font-size: 20px;
     line-height: 24px;
     color: #92dcdc;
+  }
+
+  /* -------------------------- Animation ----------------------------- */
+
+  @keyframes slideRigth {
+    from {
+      transform: translateX(-300px);
+      color: #92dcdc;
+    }
+
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideLeft {
+    from {
+      transform: translateX(300px);
+      color: #92dcdc;
+    }
+
+    to {
+      transform: translateX(0);
+    }
   }
 }
