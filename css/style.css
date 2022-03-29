@@ -76,7 +76,7 @@ header {
   display: none;
 }
 
-.hero-section h2 {
+.hero {
   font-family: 'Playfair Display', sans-serif;
   font-style: normal;
   color: #1a2236;
@@ -596,7 +596,6 @@ footer .social-icones i {
     font-style: normal;
     font-weight: 400;
     font-size: 110px;
-    line-height: 100%;
     color: #1a2236;
     animation: slideRigth 2s ease-in-out;
   }
@@ -887,7 +886,11 @@ footer .social-icones i {
 
   .block-1 img:first-child,
   .block-1 img:last-child {
-    width: 465px;
+    width: 20%;
+  }
+
+  .block-1 img:nth-child(2) {
+    width: 50%;
   }
 
   .block-2 {
@@ -896,7 +899,11 @@ footer .social-icones i {
   }
 
   .block-2 img:first-child {
-    width: 800px;
+    width: 50%;
+  }
+
+  .block-2 img:last-child {
+    width: 40%;
   }
 
   .block-3 {
