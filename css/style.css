@@ -638,7 +638,7 @@ footer .social-icones i {
     text-decoration: none;
   }
 
-  .nav-bar-desk-version li a.nav-active:after {
+  .nav-bar-desk-version a.active:after {
     content: "";
     position: absolute;
     background-color: #1a2236;
@@ -648,6 +648,7 @@ footer .social-icones i {
     bottom: -10px;
     transition: 0.3s;
   }
+
   /* -------------------------- desktop hearderline ----------------------------- */
 
   .vector-img {
@@ -657,7 +658,7 @@ footer .social-icones i {
   .headline {
     display: flex;
   }
-
+  
   .header-img {
     width: 50%;
     display: flex;
