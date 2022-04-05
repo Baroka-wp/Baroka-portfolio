@@ -560,6 +560,8 @@ a {
   display: none;
 }
 
+/* -------------------------popup ------------------------------- */
+
 /* -------------------------- footer ----------------------------- */
 
 footer {
@@ -1035,22 +1037,26 @@ footer .social-icones i {
     line-height: 24px;
     color: #92dcdc;
   }
-
-  /* -------------------------- Desk project ----------------------------- */
-  .pop-up {
-    display: block;
-    position: absolute;
-    z-index: 1000;
-    top: 100px;
-    width: 100%;
-    height: 95%;
-    background-color: rgba(26 34 54 / 74%);
+  /* -------------------------- Desk popup ----------------------------- */
+  .main.active {
+    filter: blur(10px);
+    pointer-events: none;
+    user-select: none;
   }
 
-  .pop-container {
-    position: relative;
-    top: 50px;
-    margin: auto auto;
+  .popup-container {
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s ease-in-out;
+  }
+
+  .popup-container.active {
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    top: 575px;
+    left: 50px;
+    transform: translate(100px, 762px);
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -1075,13 +1081,13 @@ footer .social-icones i {
     width: 25%;
   }
 
-  .pop-container ul {
+  .popup-container ul {
     display: flex;
     gap: 20px;
     padding: 0 60px;
   }
 
-  .pop-container li {
+  .popup-container li {
     border: 1px solid #1a2236;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -1093,23 +1099,23 @@ footer .social-icones i {
     padding: 10px;
   }
 
-  .pop-header {
+  .popup-header {
     display: flex;
     justify-content: space-between;
   }
 
-  .pop-header i{
+  .popup-header i{
     padding: 50px 60px;
     font-size: 20px;
     transition: .3s;
   }
 
-  .pop-header i:hover{
+  .popup-header i:hover{
     transition: .3s;
     font-size: 30px;
   }
 
-  .pop-container h2 {
+  .popup-container h2 {
     font-family: 'Playfair Display', sans-serif;
     font-style: normal;
     color: #1a2236;

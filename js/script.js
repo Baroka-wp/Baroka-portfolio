@@ -2,6 +2,9 @@ const toolbar = document.querySelector('.toolbar');
 const subContainer = document.querySelector('.sub-container');
 const sections = document.querySelectorAll('section');
 const navA = document.querySelectorAll('.nav-bar-desk-version ul a');
+const projectbutton = document.querySelectorAll('.projet-button');
+const modal = document.querySelector('.popup-container')
+const popupClosingIcone = document.querySelector('.popup-header i')
 
 toolbar.addEventListener('click', () => {
   toolbar.classList.toggle('active');
@@ -33,3 +36,15 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+projectbutton.forEach((button) => {
+  button.addEventListener('click', ()=> {
+      modal.classList.add('active');
+      document.querySelector('.main').classList.add('active');
+  });
+});
+
+popupClosingIcone.addEventListener('click', ()=> {
+  modal.classList.remove('active');
+  document.querySelector('.main').classList.remove('active')
+})
