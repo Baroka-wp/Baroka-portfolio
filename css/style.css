@@ -48,10 +48,6 @@ a {
   justify-content: space-between;
 }
 
-.nav-bar-mobile-version a:hover {
-  border-bottom: 3px solid #1a2236;
-}
-
 .header-nav {
   display: flex;
   justify-content: space-between;
@@ -125,6 +121,10 @@ a {
   line-height: 300%;
   text-align: center;
   color: #000;
+}
+
+.nav-bar-mobile-version a:hover {
+  border-bottom: 3px solid #1a2236;
 }
 
 .img-deco_1 {
