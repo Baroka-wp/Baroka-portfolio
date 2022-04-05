@@ -580,9 +580,8 @@ a {
   visibility: visible;
   opacity: 1;
   position: absolute;
-  top: 575px;
   left: 50px;
-  transform: translate(-5px, 762px);
+  transform: translate(-10px);
   display: flex;
   flex-direction: column;
   gap: 10px;
