@@ -15,6 +15,10 @@ const angleRight = document.querySelector('.fa-angle-right');
 const scrollingLeft = document.querySelector('.scroling-button-left');
 const scrollingrigth = document.querySelector('.scroling-button-rigth');
 const contactForm = document.querySelector('#ContactForm');
+const emailInput = document.querySelector('#ContactForm #email');
+const nameInput = document.querySelector('#ContactForm #name');
+const msgInput = document.querySelector('#ContactForm #message');
+
 const projects = {
   project1: {
     name: 'Master Mind',
@@ -178,15 +182,23 @@ popupClosingIcone.addEventListener('click', () => {
 
 contactForm.addEventListener('submit', (e) => {
   let emailInput = document.querySelector('#ContactForm #email');
-  let nameInput = document.querySelector('#ContactForm #name');
   let messageError = document.querySelector('#ContactForm small');
   let myEmailRegex = /^[A-Z]/g;
   if(myEmailRegex.test(emailInput.value) == true) {
     e.preventDefault();
     messageError.textContent = "✋ All letters of the email address must be in lower case !"
-    //emailInput.setCustomValidity("All letters of the email address must be in lower case !");
-    //emailInput.reportValidity();
-    //emailInput.value = `${emailInput.value.toLowerCase()}`
-    //return false;
   }
-})
+  const msg = {
+    email: emailInput.value,
+    name: nameInput.value,
+    msg: msgInput.value,
+  };
+  localStorage.setItem('msg', JSON.stringify(msg));
+});
+
+if (localStorage.getItem('msg') != null) {
+  const userMsg = JSON.parse(localStorage.getItem('msg'));
+  emailInput.value = userMsg.email;
+  nameInput.value = userMsg.name;
+  msgInput.value = userMsg.msg;
+}
