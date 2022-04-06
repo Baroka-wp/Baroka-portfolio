@@ -183,6 +183,7 @@ contactForm.addEventListener('submit', (e) => {
   if(myEmailRegex.test(emailInput.value)) {
     emailInput.setCustomValidity("All letters of the email address must be in lower case !");
     emailInput.reportValidity();
+    //emailInput.value = `${emailInput.value.toLowerCase()}`
     e.preventDefault();
   }
 })
