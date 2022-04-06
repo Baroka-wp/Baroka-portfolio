@@ -573,15 +573,16 @@ a {
   opacity: 0;
   pointer-events: all;
   user-select: all;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .popup-container.active {
   visibility: visible;
   opacity: 1;
-  position: absolute;
+  position: fixed;
+  top:10px;
   left: 70px;
-  transform: translate(20px);
+  transform: translate(10px);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -783,6 +784,15 @@ a {
 .fa-angle-right:hover {
   font-size: 35px;
 }
+
+.scroling-button-left {
+  cursor: pointer;
+}
+
+.scroling-button-rigth {
+  cursor: pointer;
+}
+
 
 /* -------------------------- footer ----------------------------- */
 

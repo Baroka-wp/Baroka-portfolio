@@ -12,6 +12,9 @@ const img = document.querySelector('.main-project-img');
 const seeLiveButton = document.querySelector('.see-live-button');
 const sourceCode = document.querySelector('.source-code-button');
 const angleRight = document.querySelector('.fa-angle-right');
+const scrollingLeft = document.querySelector('.scroling-button-left')
+const scrollingrigth = document.querySelector('.scroling-button-rigth')
+
 const projects = {
   project1 : {
     name: "Master Mind",
@@ -109,19 +112,6 @@ projectbutton.forEach((button) => {
     for(let k of [...Object.keys(projects)]) {
       if(button.classList.contains(k)) {
         dynamicContent(k);
-        if( k == "project1") {
-          modal.style.marginTop = "600px";
-        } else if ( k == "project2") {
-          modal.style.marginTop = "1000px";
-        } else if ( k == "project3") {
-          modal.style.marginTop = "1700px";
-        } else if ( k == "project4") {
-          modal.style.marginTop = "2200px";
-        } else if ( k == "project5") {
-          modal.style.marginTop = "2400px";
-        } else if ( k == "project6") {
-          modal.style.marginTop = "3100px";
-        }
         break;
       };
     }
@@ -148,8 +138,37 @@ angleLeft.addEventListener('click', () => {
     dynamicContent(projectList[i]);
   }
   i--;
-})
+});
 
+angleRight.addEventListener('click', () => {
+  if( i < projectList.length){
+    dynamicContent(projectList[i]);
+  }else {
+    i = 0;
+    dynamicContent(projectList[i]);
+  }
+  i++
+});
+
+scrollingLeft.addEventListener('click', () => {
+  if( i < 0 ){
+    i = projectList.length - 1;
+    dynamicContent(projectList[i]);
+  }else {
+    dynamicContent(projectList[i]);
+  }
+  i--;
+});
+
+scrollingrigth.addEventListener('click', () => {
+  if( i < projectList.length){
+    dynamicContent(projectList[i]);
+  }else {
+    i = 0;
+    dynamicContent(projectList[i]);
+  }
+  i++
+});
 
 popupClosingIcone.addEventListener('click', () => {
   modal.classList.remove('active');
