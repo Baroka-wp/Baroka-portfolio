@@ -560,6 +560,14 @@ a {
   display: none;
 }
 
+#ContactForm small {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  color: red;
+}
 /* -------------------------mobile popup ------------------------------- */
 
 .main.active {

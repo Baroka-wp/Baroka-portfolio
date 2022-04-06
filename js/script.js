@@ -179,11 +179,14 @@ popupClosingIcone.addEventListener('click', () => {
 contactForm.addEventListener('submit', (e) => {
   let emailInput = document.querySelector('#ContactForm #email');
   let nameInput = document.querySelector('#ContactForm #name');
+  let messageError = document.querySelector('#ContactForm small');
   let myEmailRegex = /^[A-Z]/g;
-  if(myEmailRegex.test(emailInput.value)) {
-    emailInput.setCustomValidity("All letters of the email address must be in lower case !");
-    emailInput.reportValidity();
-    //emailInput.value = `${emailInput.value.toLowerCase()}`
+  if(myEmailRegex.test(emailInput.value) == true) {
     e.preventDefault();
+    messageError.textContent = "✋ All letters of the email address must be in lower case !"
+    //emailInput.setCustomValidity("All letters of the email address must be in lower case !");
+    //emailInput.reportValidity();
+    //emailInput.value = `${emailInput.value.toLowerCase()}`
+    //return false;
   }
 })
