@@ -23,7 +23,7 @@
 - Twitter: [@twitterhandle](https://twitter.com/IrotoriB)
 - LinkedIn: [LinkedIn](www.linkedin.com/in/baroka)
 
-👤 **Co Author : Jamila Moseka**
+👥 **Co Author : MOSEKA Jamila**
 
 - GitHub: [@githubhandle](https://github.com/jmoseka)
 - Twitter: [@twitterhandle](https://twitter.com/mila-moseka)
