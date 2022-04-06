@@ -573,7 +573,7 @@ a {
   opacity: 0;
   pointer-events: all;
   user-select: all;
-  transition: 1s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .popup-container.active {
@@ -755,6 +755,33 @@ a {
   font-family: 'Poppins', sans-serif;
   color: #1a2236;
   font-size: 14px;
+}
+
+.scroll-fleche {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 98%;
+  padding: 5px;
+  transform: translateY(110px);
+  color: #1a2236;
+  font-size: 30px;
+}
+
+.fa-angle-left {
+  cursor: pointer;
+}
+
+.fa-angle-left:hover {
+  font-size: 35px;
+}
+
+.fa-angle-right {
+  cursor: pointer;
+}
+
+.fa-angle-right:hover {
+  font-size: 35px;
 }
 
 /* -------------------------- footer ----------------------------- */

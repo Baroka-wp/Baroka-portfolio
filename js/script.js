@@ -154,5 +154,4 @@ angleLeft.addEventListener('click', () => {
 popupClosingIcone.addEventListener('click', () => {
   modal.classList.remove('active');
   document.querySelector('.main').classList.remove('active');
-  modal.style.display = "none";
 });
