@@ -14,7 +14,7 @@ const sourceCode = document.querySelector('.source-code-button');
 const angleRight = document.querySelector('.fa-angle-right');
 const scrollingLeft = document.querySelector('.scroling-button-left');
 const scrollingrigth = document.querySelector('.scroling-button-rigth');
-
+const contactForm = document.querySelector('#ContactForm');
 const projects = {
   project1: {
     name: 'Master Mind',
@@ -175,3 +175,15 @@ popupClosingIcone.addEventListener('click', () => {
   modal.classList.remove('active');
   document.querySelector('.main').classList.remove('active');
 });
+
+contactForm.addEventListener('submit', (e) => {
+  let emailInput = document.querySelector('#ContactForm #email');
+  let nameInput = document.querySelector('#ContactForm #name');
+  let myEmailRegex = /^[A-Z]/g;
+  let myNameRegex = /^[a-zA-Z]+$/;
+  if(myEmailRegex.test(emailInput.value)) {
+    emailInput.setCustomValidity("All letters of the email address must be in lower case !");
+    emailInput.reportValidity();
+    event.preventDefault();
+  }
+})
