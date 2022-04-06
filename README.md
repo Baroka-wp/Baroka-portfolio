@@ -23,6 +23,11 @@
 - Twitter: [@twitterhandle](https://twitter.com/IrotoriB)
 - LinkedIn: [LinkedIn](www.linkedin.com/in/baroka)
 
+👥 **Co Author : MOSEKA Jamila**
+
+- GitHub: [jmoseka](https://github.com/jmoseka)
+- Twitter: [@milamoseka](https://twitter.com/mila-moseka)
+- LinkedIn: [jamila-moseka](https://www.linkedin.com/in/jamila-moseka/)
 
 ## 🤝 Contributing
 
@@ -31,7 +36,6 @@ Contributions, issues, and feature requests are welcome!
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
 
 ## 📝 License
 
