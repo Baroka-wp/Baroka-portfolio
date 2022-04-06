@@ -190,6 +190,12 @@ contactForm.addEventListener('submit', (e) => {
     // emailInput.value = `${emailInput.value.toLowerCase()}`
     e.preventDefault();
   }
+  const msg = {
+    email: emailInput.value,
+    name: nameInput.value,
+    msg: msgInput.value,
+  };
+  localStorage.setItem('msg', JSON.stringify(msg));
 });
 
 if (localStorage.getItem('msg') != null) {
@@ -198,12 +204,3 @@ if (localStorage.getItem('msg') != null) {
   nameInput.value = userMsg.name;
   msgInput.value = userMsg.msg;
 }
-
-contactForm.addEventListener('submit', () => {
-  const msg = {
-    email: emailInput.value,
-    name: nameInput.value,
-    msg: msgInput.value,
-  };
-  localStorage.setItem('msg', JSON.stringify(msg));
-});
