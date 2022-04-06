@@ -579,8 +579,10 @@ a {
 .popup-container.active {
   visibility: visible;
   opacity: 1;
+  max-height: 95%;
   position: fixed;
-  top: 10px;
+  overflow: scroll;
+  top: 3px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -750,7 +752,7 @@ a {
   position: relative;
   width: 98%;
   padding: 5px;
-  transform: translateY(110px);
+  transform: translateY(150px);
   color: #1a2236;
   font-size: 30px;
 }
