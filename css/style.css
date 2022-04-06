@@ -581,12 +581,9 @@ a {
   opacity: 1;
   position: fixed;
   top: 10px;
-  left: 70px;
-  transform: translate(10px);
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 70%;
   background: #fff;
 }
 
@@ -670,6 +667,7 @@ a {
 
 .project-button {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5px;
@@ -690,7 +688,7 @@ a {
   font-weight: 500;
   line-height: 24px;
   text-align: center;
-  width: 150px;
+  width: 200px;
   border: 1px solid #1a2236;
   padding: 10px 0;
 }
@@ -715,47 +713,35 @@ a {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  background: #1a2236;
-  color: #fff;
+  background: #fff;
+  color: #1a2236;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-size: 15px;
   font-weight: 500;
   line-height: 24px;
   text-align: center;
-  width: 150px;
+  width: 200px;
   border: 1px solid #1a2236;
   padding: 10px 0;
 }
 
 .source-code-button:hover {
-  background: #fff;
-  color: #1a2236;
-  border: 1px solid #1a2236;
+  background: #1a2236;
+  color: #fff;
+  border: 2px solid #fff;
   box-sizing: border-box;
 }
 
 .source-code-button:active {
-  background: #fff;
-  color: #1a2236;
-  border: 2px solid #1a2236;
+  background: #1a2236;
+  color: #fff;
+  border: 2px solid #fff;
   box-sizing: border-box;
 }
 
 .scroling-fleche {
-  display: flex;
-  width: 70%;
-  align-items: center;
-  justify-content: space-between;
-  margin: auto auto;
-  gap: 53px;
-  margin-bottom: 40px;
-}
-
-.scroling-fleche a {
-  font-family: 'Poppins', sans-serif;
-  color: #1a2236;
-  font-size: 14px;
+  display: none;
 }
 
 .scroll-fleche {
@@ -1371,6 +1357,7 @@ footer .social-icones i {
 
   .project-button {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 53px;
