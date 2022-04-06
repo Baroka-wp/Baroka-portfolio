@@ -580,8 +580,8 @@ a {
   visibility: visible;
   opacity: 1;
   position: absolute;
-  left: 50px;
-  transform: translate(-10px);
+  left: 70px;
+  transform: translate(20px);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1411,5 +1411,32 @@ footer .social-icones i {
     margin: auto auto;
     gap: 53px;
     margin-bottom: 40px;
+  }
+
+  .scroll-fleche {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 98%;
+    padding: 5px;
+    transform: translateY(210px);
+    color: #fff;
+    font-size: 30px;
+  }
+
+  .fa-angle-left {
+    cursor: pointer;
+  }
+
+  .fa-angle-left:hover {
+    font-size: 35px;
+  }
+
+  .fa-angle-right {
+    cursor: pointer;
+  }
+
+  .fa-angle-right:hover {
+    font-size: 35px;
   }
 }

@@ -5,6 +5,13 @@ const navA = document.querySelectorAll('.nav-bar-desk-version ul a');
 const projectbutton = document.querySelectorAll('.projet-button');
 const modal = document.querySelector('.popup-container');
 const popupClosingIcone = document.querySelector('.popup-header i');
+const angleLeft = document.querySelector('.fa-angle-left');
+const h2 = document.querySelector('.popup-container .popup-header h2');
+const p = document.querySelector('.popup-container .project-description p');
+const img = document.querySelector('.main-project-img');
+const seeLiveButton = document.querySelector('.see-live-button');
+const sourceCode = document.querySelector('.source-code-button');
+const angleRight = document.querySelector('.fa-angle-right');
 const projects = {
   project1 : {
     name: "Master Mind",
@@ -87,22 +94,21 @@ window.addEventListener('scroll', () => {
   });
 });
 
+const dynamicContent = (project) => {
+  h2.textContent = projects[project].name;
+  p.textContent = projects[project].description;
+  img.src = projects[project].mainImage;
+  seeLiveButton.href = projects[project].live;
+  sourceCode.href = projects[project].source;
+}
+
 projectbutton.forEach((button) => {
   button.addEventListener('click', () => {
     modal.classList.add('active');
     document.querySelector('.main').classList.add('active');
-    const h2 = document.querySelector('.popup-container .popup-header h2');
-    const p = document.querySelector('.popup-container .project-description p');
-    const img = document.querySelector('.main-project-img');
-    const seeLiveButton = document.querySelector('.see-live-button');
-    const sourceCode = document.querySelector('.source-code-button');
     for(let k of [...Object.keys(projects)]) {
       if(button.classList.contains(k)) {
-        h2.textContent = projects[k].name;
-        p.textContent = projects[k].description;
-        img.src = projects[k].mainImage;
-        seeLiveButton.href = projects[k].live;
-        sourceCode.href = projects[k].source;
+        dynamicContent(k);
         if( k == "project1") {
           modal.style.marginTop = "600px";
         } else if ( k == "project2") {
@@ -110,20 +116,43 @@ projectbutton.forEach((button) => {
         } else if ( k == "project3") {
           modal.style.marginTop = "1700px";
         } else if ( k == "project4") {
-          modal.style.marginTop = "2000px";
+          modal.style.marginTop = "2200px";
         } else if ( k == "project5") {
-          modal.style.marginTop = "2000px";
+          modal.style.marginTop = "2400px";
         } else if ( k == "project6") {
-          modal.style.marginTop = "2100px";
+          modal.style.marginTop = "3100px";
         }
-
         break;
       };
     }
   });
 });
 
+let i = 0;
+const projectList = [...Object.keys(projects)]
+angleRight.addEventListener('click', () => {
+  if( i < projectList.length){
+    dynamicContent(projectList[i]);
+  }else {
+    i = 0;
+    dynamicContent(projectList[i]);
+  }
+  i++
+});
+
+angleLeft.addEventListener('click', () => {
+  if( i < 0 ){
+    i = projectList.length - 1;
+    dynamicContent(projectList[i]);
+  }else {
+    dynamicContent(projectList[i]);
+  }
+  i--;
+})
+
+
 popupClosingIcone.addEventListener('click', () => {
   modal.classList.remove('active');
   document.querySelector('.main').classList.remove('active');
+  modal.style.display = "none";
 });
