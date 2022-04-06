@@ -12,59 +12,59 @@ const img = document.querySelector('.main-project-img');
 const seeLiveButton = document.querySelector('.see-live-button');
 const sourceCode = document.querySelector('.source-code-button');
 const angleRight = document.querySelector('.fa-angle-right');
-const scrollingLeft = document.querySelector('.scroling-button-left')
-const scrollingrigth = document.querySelector('.scroling-button-rigth')
+const scrollingLeft = document.querySelector('.scroling-button-left');
+const scrollingrigth = document.querySelector('.scroling-button-rigth');
 
 const projects = {
-  project1 : {
-    name: "Master Mind",
+  project1: {
+    name: 'Master Mind',
     mainImage: 'images/project-img-1.png',
-    technologies: ["HTML/CSS", "Ruby on Rail", "Javascrip"],
+    technologies: ['HTML/CSS', 'Ruby on Rail', 'Javascrip'],
     description: 'It is a project that allows to network people who want to learn things',
-    live: "#",
-    source: "#"
+    live: '#',
+    source: '#',
   },
   project2: {
-    name: "Africa Samurai",
+    name: 'Africa Samurai',
     mainImage: 'images/project-img-2.png',
-    technologies: ["HTML/CSS", "Ruby on Rail", "Javascrip"],
+    technologies: ['HTML/CSS', 'Ruby on Rail', 'Javascrip'],
     description: 'This project aims to create employment in Africa',
-    live: "#",
-    source: "#"
+    live: '#',
+    source: '#',
   },
   project3: {
-    name: "Facebook Clone",
+    name: 'Facebook Clone',
     mainImage: 'images/project-img-3.png',
-    technologies: ["HTML/CSS", "Ruby on Rail", "Javascrip"],
+    technologies: ['HTML/CSS', 'Ruby on Rail', 'Javascrip'],
     description: 'It is a training project that consisted in creating a clone of facebook',
-    live: "#",
-    source: "#"
+    live: '#',
+    source: '#',
   },
   project4: {
-    name: "Tinder Clone",
+    name: 'Tinder Clone',
     mainImage: 'images/project-img-4.png',
-    technologies: ["HTML/CSS", "Ruby on Rail", "Javascrip"],
+    technologies: ['HTML/CSS', 'Ruby on Rail', 'Javascrip'],
     description: 'It is a training project that consisted in creating a clone of tinder',
-    live: "#",
-    source: "#"
+    live: '#',
+    source: '#',
   },
   project5: {
-    name: "Bishop",
+    name: 'Bishop',
     mainImage: 'images/project-img-5.png',
-    technologies: ["HTML/CSS", "Ruby on Rail", "Javascrip"],
+    technologies: ['HTML/CSS', 'Ruby on Rail', 'Javascrip'],
     description: 'It is a complete project to promote startups in Benin. Allowing them to create a network of synergy with other startups',
-    live: "#",
-    source: "#"
+    live: '#',
+    source: '#',
   },
   project6: {
-    name: "Everyleaf",
+    name: 'Everyleaf',
     mainImage: 'images/project-img-6.png',
-    technologies: ["HTML/CSS", "Ruby on Rail", "Javascrip"],
+    technologies: ['HTML/CSS', 'Ruby on Rail', 'Javascrip'],
     description: 'It is a complete project in ruby on rails for the management of tasks',
-    live: "#",
-    source: "#"
+    live: '#',
+    source: '#',
   },
-}
+};
 
 toolbar.addEventListener('click', () => {
   toolbar.classList.toggle('active');
@@ -103,71 +103,72 @@ const dynamicContent = (project) => {
   img.src = projects[project].mainImage;
   seeLiveButton.href = projects[project].live;
   sourceCode.href = projects[project].source;
-}
+};
 
 projectbutton.forEach((button) => {
   button.addEventListener('click', () => {
     modal.classList.add('active');
     document.querySelector('.main').classList.add('active');
-    for(let k of [...Object.keys(projects)]) {
-      if(button.classList.contains(k)) {
+    // eslint-disable-next-line no-restricted-syntax
+    for (const k of [...Object.keys(projects)]) {
+      if (button.classList.contains(k)) {
         dynamicContent(k);
         break;
-      };
+      }
     }
   });
 });
 
 let i = 0;
-const projectList = [...Object.keys(projects)]
+const projectList = [...Object.keys(projects)];
 angleRight.addEventListener('click', () => {
-  if( i < projectList.length){
+  if (i < projectList.length) {
     dynamicContent(projectList[i]);
-  }else {
+  } else {
     i = 0;
     dynamicContent(projectList[i]);
   }
-  i++
+  i += 1;
 });
 
 angleLeft.addEventListener('click', () => {
-  if( i < 0 ){
+  if (i < 0) {
     i = projectList.length - 1;
     dynamicContent(projectList[i]);
-  }else {
+  } else {
     dynamicContent(projectList[i]);
   }
-  i--;
+  i -= 1;
 });
 
 angleRight.addEventListener('click', () => {
-  if( i < projectList.length){
+  if (i < projectList.length) {
     dynamicContent(projectList[i]);
-  }else {
+  } else {
     i = 0;
     dynamicContent(projectList[i]);
   }
-  i++
+  i += 1;
 });
 
 scrollingLeft.addEventListener('click', () => {
-  if( i < 0 ){
+  if (i < 0) {
     i = projectList.length - 1;
     dynamicContent(projectList[i]);
-  }else {
+  } else {
     dynamicContent(projectList[i]);
   }
-  i--;
+  i -= 1;
 });
 
 scrollingrigth.addEventListener('click', () => {
-  if( i < projectList.length){
+  if (i < projectList.length) {
     dynamicContent(projectList[i]);
-  }else {
+  } else {
     i = 0;
     dynamicContent(projectList[i]);
   }
-  i++
+  i += 1;
 });
 
 popupClosingIcone.addEventListener('click', () => {
