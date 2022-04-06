@@ -580,7 +580,7 @@ a {
   visibility: visible;
   opacity: 1;
   position: fixed;
-  top:10px;
+  top: 10px;
   left: 70px;
   transform: translate(10px);
   display: flex;
@@ -792,7 +792,6 @@ a {
 .scroling-button-rigth {
   cursor: pointer;
 }
-
 
 /* -------------------------- footer ----------------------------- */
 
