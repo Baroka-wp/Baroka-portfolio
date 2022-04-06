@@ -181,14 +181,12 @@ popupClosingIcone.addEventListener('click', () => {
 });
 
 contactForm.addEventListener('submit', (e) => {
-  const emailInput = document.querySelector('#ContactForm #email');
-  // const nameInput = document.querySelector('#ContactForm #name');
-  const myEmailRegex = /^[A-Z]/g;
-  if (myEmailRegex.test(emailInput.value)) {
-    emailInput.setCustomValidity('All letters of the email address must be in lower case !');
-    emailInput.reportValidity();
-    // emailInput.value = `${emailInput.value.toLowerCase()}`
+  let emailInput = document.querySelector('#ContactForm #email');
+  let messageError = document.querySelector('#ContactForm small');
+  let myEmailRegex = /^[A-Z]/g;
+  if(myEmailRegex.test(emailInput.value) == true) {
     e.preventDefault();
+    messageError.textContent = "✋ All letters of the email address must be in lower case !"
   }
 });
 
