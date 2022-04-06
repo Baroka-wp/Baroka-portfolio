@@ -180,10 +180,9 @@ contactForm.addEventListener('submit', (e) => {
   let emailInput = document.querySelector('#ContactForm #email');
   let nameInput = document.querySelector('#ContactForm #name');
   let myEmailRegex = /^[A-Z]/g;
-  let myNameRegex = /^[a-zA-Z]+$/;
   if(myEmailRegex.test(emailInput.value)) {
     emailInput.setCustomValidity("All letters of the email address must be in lower case !");
     emailInput.reportValidity();
-    event.preventDefault();
+    e.preventDefault();
   }
 })
