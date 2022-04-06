@@ -25,9 +25,9 @@
 
 👥 **Co Author : MOSEKA Jamila**
 
-- GitHub: [@githubhandle](https://github.com/jmoseka)
-- Twitter: [@twitterhandle](https://twitter.com/mila-moseka)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/jamila-moseka/)
+- GitHub: [jmoseka](https://github.com/jmoseka)
+- Twitter: [@milamoseka](https://twitter.com/mila-moseka)
+- LinkedIn: [jamila-moseka](https://www.linkedin.com/in/jamila-moseka/)
 
 ## 🤝 Contributing
 
