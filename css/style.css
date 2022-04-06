@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap");
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -46,9 +46,13 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  height: 100%;
 }
 
 .header-nav {
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
 }
@@ -114,13 +118,17 @@ a {
 }
 
 .nav-list li a {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 300%;
   text-align: center;
   color: #000;
+}
+
+.nav-bar-mobile-version a:hover {
+  border-bottom: 3px solid #1a2236;
 }
 
 .img-deco_1 {
@@ -159,7 +167,7 @@ a {
 }
 
 .hero-section h2 {
-  font-family: 'Playfair Display', sans-serif;
+  font-family: "Playfair Display", sans-serif;
   font-style: normal;
   color: #1a2236;
   width: 200px;
@@ -170,7 +178,7 @@ a {
 
 .hero-section p {
   color: #1a2236;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -182,7 +190,7 @@ a {
 .header-button {
   align-self: stretch;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 22px;
   line-height: 24px;
@@ -218,7 +226,7 @@ a {
 }
 
 .contact-form h2 {
-  font-family: 'Playfair Display', sans-serif;
+  font-family: "Playfair Display", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
@@ -232,7 +240,7 @@ a {
 }
 
 #portofolio h2 {
-  font-family: 'Playfair Display', sans-serif;
+  font-family: "Playfair Display", sans-serif;
   color: #1a2236;
   font-style: normal;
   font-weight: 400;
@@ -264,7 +272,7 @@ a {
 
 .rectangle p {
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 27px;
@@ -298,7 +306,7 @@ a {
   justify-content: space-around;
   background: #fff;
   color: #1a2236;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 20px;
   font-weight: 500;
@@ -337,7 +345,7 @@ a {
 }
 
 #about h2 {
-  font-family: 'Playfair Display', sans-serif;
+  font-family: "Playfair Display", sans-serif;
   color: #1a2236;
   font-style: normal;
   font-weight: 400;
@@ -349,7 +357,7 @@ a {
 
 .about-section p {
   color: #1a2236;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -366,7 +374,7 @@ a {
   gap: 20px;
   background: #1a2236;
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 22px;
   font-weight: 500;
@@ -411,7 +419,7 @@ a {
 }
 
 .technologies-section h3 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 35px;
@@ -421,7 +429,7 @@ a {
 }
 
 .technologies-section li {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 25px;
@@ -467,7 +475,7 @@ a {
 }
 
 .contact-form p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -483,7 +491,7 @@ a {
 }
 
 .contact-form form input {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -505,7 +513,7 @@ a {
 }
 
 .contact-form form textarea {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -530,7 +538,7 @@ a {
 .contact-form button {
   align-self: stretch;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 22px;
   line-height: 24px;
@@ -558,6 +566,15 @@ a {
 
 .contact-form form label {
   display: none;
+}
+
+#ContactForm small {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  color: red;
 }
 
 /* -------------------------mobile popup ------------------------------- */
@@ -849,7 +866,7 @@ footer .social-icones i {
 
   .nav-bar-desk-version li a {
     position: relative;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -902,7 +919,7 @@ footer .social-icones i {
   }
 
   .hero-section h2 {
-    font-family: 'Playfair Display', sans-serif;
+    font-family: "Playfair Display", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 110px;
@@ -911,7 +928,7 @@ footer .social-icones i {
   }
 
   .hero-section p {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -936,7 +953,7 @@ footer .social-icones i {
   }
 
   .projects-desk h2 {
-    font-family: 'Playfair Display', sans-serif;
+    font-family: "Playfair Display", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 110px;
@@ -984,7 +1001,7 @@ footer .social-icones i {
 
   .projects-desk .rectangle p {
     color: #fff;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
@@ -1018,7 +1035,7 @@ footer .social-icones i {
     justify-content: space-around;
     background: #fff;
     color: #1a2236;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-size: 20px;
     font-weight: 500;
@@ -1170,7 +1187,7 @@ footer .social-icones i {
 
   .contact-form form label {
     display: block;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
